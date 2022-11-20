@@ -34,13 +34,13 @@ public class TheaterServiceImpl implements TheaterService {
 
         List<TheaterSeatsEntity> seats = createTheaterSeats(); // createing seats list
 
-        theaterEntity.setSeats(seats);
-
-        theaterEntity.setShows(null);
-
         for(TheaterSeatsEntity theaterSeatsEntity : seats){
             theaterSeatsEntity.setTheater(theaterEntity);
         }
+
+        theaterEntity.setSeats(seats);
+
+        theaterEntity.setShows(null);
 
         theaterEntity.setType(TheaterType.SINGLE);
 
