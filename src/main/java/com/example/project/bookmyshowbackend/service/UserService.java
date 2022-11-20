@@ -1,10 +1,11 @@
 package com.example.project.bookmyshowbackend.service;
 
-import com.example.project.bookmyshowbackend.dto.UserDto;
+import com.example.project.bookmyshowbackend.dto.EntryRequest.UserEntryDto;
+import com.example.project.bookmyshowbackend.dto.ResponseDto.UserResponseDto;
 
 public interface UserService {  // Designing part
 
-    void addUser(UserDto userDto);
+    void addUser(UserEntryDto userEntryDto);
 
-    UserDto getUser(int id);
+    UserResponseDto getUser(int id);
 }

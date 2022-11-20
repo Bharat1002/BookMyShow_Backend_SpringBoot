@@ -13,7 +13,6 @@ import java.util.List;
 @Table(name = "movies")
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Builder
 public class MovieEntity {
 

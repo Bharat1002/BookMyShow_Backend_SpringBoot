@@ -1,4 +1,4 @@
-package com.example.project.bookmyshowbackend.dto;
+package com.example.project.bookmyshowbackend.dto.EntryRequest;
 
 import com.sun.istack.NotNull;
 import lombok.*;
@@ -8,13 +8,11 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class UserDto {
-
-    private int id;
+public class UserEntryDto {
 
     @NotNull
     private String name;
 
     @NotNull
-    private String mobileNo;
+    private String mobNo;
 }

@@ -1,5 +1,6 @@
 package com.example.project.bookmyshowbackend.Model;
 
+import com.example.project.bookmyshowbackend.enums.TheaterType;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
@@ -32,6 +33,8 @@ public class TheaterEntity {
     @OneToMany(mappedBy = "theater", cascade = CascadeType.ALL)
     @JsonIgnore
     private List<ShowEntity> shows;
+
+    private TheaterType type;
 
     @OneToMany(mappedBy = "theater", cascade = CascadeType.ALL)
     @JsonIgnore
